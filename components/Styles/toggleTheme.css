@@ -1,0 +1,16 @@
+input:checked ~ .dot {
+    transform: translateX(100%);
+    background-color: #48bb78;
+  }
+
+  .bg-texture {
+    background: hsla(121, 48%, 57%, 1);
+
+background: linear-gradient(90deg, hsla(121, 48%, 57%, 1) 50%, hsla(94, 76%, 40%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(121, 48%, 57%, 1) 50%, hsla(94, 76%, 40%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(121, 48%, 57%, 1) 50%, hsla(94, 76%, 40%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5EC65F", endColorstr="#5BB318", GradientType=1 );  }
+  
