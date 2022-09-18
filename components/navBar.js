@@ -2,7 +2,9 @@ import Link from "next/link";
 import { useState } from "react";
 import ToggleTheme from "./ToggleTheme";
 
+
 const NavBar = ({ props }) => {
+
   const { themes, currTheme, setCurrTheme } = props;
 
   const [isOpen, setOpen] = useState(false);
@@ -13,6 +15,7 @@ const NavBar = ({ props }) => {
 
   return (
     <nav
+    className="scroll-smooth"
       style={{
         backgroundColor: currTheme.bgcolor,
         borderBottom: "0.5px solid",
@@ -24,8 +27,7 @@ const NavBar = ({ props }) => {
           <div className="flex items-center justify-between">
             <div>
               <a
-              style = {{ color: props.currTheme.titleCol }}
-
+                style={{ color: props.currTheme.titleCol }}
                 className="text-2xl font-bold text-gray-800 transition-colors duration-200 transform dark:text-white lg:text-3xl hover:text-gray-700 dark:hover:text-gray-300"
                 href="#"
               >
@@ -61,40 +63,37 @@ const NavBar = ({ props }) => {
           >
             <Link href={"/"}>
               <a
-              style = {{ color: props.currTheme.titleCol }}
-
+                style={{ color: props.currTheme.titleCol }}
                 style={{ color: currTheme.optColor2 }}
                 className="mt-2 transition-colors duration-200 transform lg:mt-0 lg:mx-4 hover:text-gray-900 dark:hover:text-gray-200"
               >
                 Home
               </a>
             </Link>
-            <Link href={"/"}>
+            <Link href={"/team"}>
               <a
-              style = {{ color: props.currTheme.titleCol }}
-
+                style={{ color: props.currTheme.titleCol }}
                 style={{ color: currTheme.optColor2 }}
                 className="mt-2 transition-colors duration-200 transform lg:mt-0 lg:mx-4 hover:text-gray-900 dark:hover:text-gray-200"
               >
                 About
               </a>
             </Link>
-            <Link href={"/"}>
+            <Link href={"/prices"}>
               <a
-              style = {{ color: props.currTheme.titleCol }}
-
+                style={{ color: props.currTheme.titleCol }}
                 style={{ color: currTheme.optColor2 }}
                 className="mt-2 transition-colors duration-200 transform lg:mt-0 lg:mx-4 hover:text-gray-900 dark:hover:text-gray-200"
               >
-                Contact
+                Pricing
               </a>
             </Link>
-            <Link href={"/"}>
+            <Link href={"/#services"}>
               <a
-              style = {{ color: props.currTheme.titleCol }}
-
+               
+                style={{ color: props.currTheme.titleCol }}
                 style={{ color: currTheme.optColor2 }}
-                className="mt-2 transition-colors duration-200 transform lg:mt-0 lg:mx-4 hover:text-gray-900 dark:hover:text-gray-200"
+                className="mt-2 transition-colors duration-200 transform lg:mt-0 lg:mx-4 scroll-smooth hover:text-gray-900 dark:hover:text-gray-200"
               >
                 Services
               </a>
@@ -108,8 +107,7 @@ const NavBar = ({ props }) => {
           }`}
         >
           <a
-          style = {{ color: props.currTheme.titleCol }}
-
+            style={{ color: props.currTheme.titleCol }}
             href="#"
             className="mx-2 text-gray-600 transition-colors duration-200 transform dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300"
             aria-label="Reddit"
@@ -125,8 +123,7 @@ const NavBar = ({ props }) => {
           </a>
 
           <a
-          style = {{ color: props.currTheme.titleCol }}
-
+            style={{ color: props.currTheme.titleCol }}
             href="#"
             className="mx-2 text-gray-600 transition-colors duration-200 transform dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300"
             aria-label="Facebook"
@@ -142,8 +139,7 @@ const NavBar = ({ props }) => {
           </a>
 
           <a
-          style = {{ color: props.currTheme.titleCol }}
-
+            style={{ color: props.currTheme.titleCol }}
             href="#"
             className="mx-2 text-gray-600 transition-colors duration-200 transform dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300"
             aria-label="Github"
@@ -154,8 +150,7 @@ const NavBar = ({ props }) => {
             </svg>
           </a>
 
-                <ToggleTheme props={{themes, currTheme, setCurrTheme}}  />
-
+          <ToggleTheme props={{ themes, currTheme, setCurrTheme }} />
         </div>
       </div>
     </nav>

@@ -13,7 +13,7 @@ export default function ToggleTheme({props}) {
                   }
                 } className="flex items-center cursor-pointer">
    
-   Change Theme
+   Theme
       </div>
       );
 }

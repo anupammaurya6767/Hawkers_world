@@ -13,18 +13,18 @@ const Footer = ({ props }) => {
               style={{ color: props.currTheme.titleCol }}
               class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
             >
-              {/* <svg
-                xmlns="http://www.w3.org/2000/svg"
+               <svg
+                xmlns="file:///D:/CODING%20VENTURE/hack2skill%20manav%20rachna/Untitled%20design.svg"
                 fill="none"
                 stroke="currentColor"
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="2"
-                class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
+                class="w-10 h-10 text-white p-2 bg-green-500 rounded-full"
                 viewBox="0 0 24 24"
               >
                 <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-              </svg> */}
+              </svg> 
               <span
                 class="ml-3 text-xl"
                 style={{ color: props.currTheme.titleCol }}
@@ -51,7 +51,7 @@ with Technology and Love.
               style={{ color: props.currTheme.titleCol }}
               class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"
             >
-              CATEGORIES
+              ABOUT US
             </h2>
             <nav
               class="list-none mb-10"
@@ -63,7 +63,7 @@ with Technology and Love.
                     style={{ color: props.currTheme.titleCol }}
                     class="text-gray-600 hover:text-gray-800"
                   >
-                    First Link
+                    Meet the team
                   </a>
                 </Link>
               </li>
@@ -73,7 +73,7 @@ with Technology and Love.
                     style={{ color: props.currTheme.titleCol }}
                     class="text-gray-600 hover:text-gray-800"
                   >
-                    Second Link
+                    Contact Us
                   </a>
                 </Link>
               </li>
@@ -83,7 +83,7 @@ with Technology and Love.
                     style={{ color: props.currTheme.titleCol }}
                     class="text-gray-600 hover:text-gray-800"
                   >
-                    Third Link
+                  
                   </a>
                 </Link>
               </li>
@@ -93,7 +93,7 @@ with Technology and Love.
                     style={{ color: props.currTheme.titleCol }}
                     class="text-gray-600 hover:text-gray-800"
                   >
-                    Fourth Link
+                  
                   </a>
                 </Link>
               </li>
@@ -104,7 +104,7 @@ with Technology and Love.
               style={{ color: props.currTheme.titleCol }}
               class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"
             >
-              CATEGORIES
+              REVIEWS
             </h2>
             <nav class="list-none mb-10">
               <li style={{ color: props.currTheme.titleCol }}>
@@ -113,7 +113,7 @@ with Technology and Love.
                     style={{ color: props.currTheme.titleCol }}
                     class="text-gray-600 hover:text-gray-800"
                   >
-                    First Link
+                    Vendor Reviews
                   </a>
                 </Link>
               </li>
@@ -123,7 +123,7 @@ with Technology and Love.
                     style={{ color: props.currTheme.titleCol }}
                     class="text-gray-600 hover:text-gray-800"
                   >
-                    Second Link
+                    Consumer Reviews
                   </a>
                 </Link>
               </li>
@@ -133,7 +133,7 @@ with Technology and Love.
                     style={{ color: props.currTheme.titleCol }}
                     class="text-gray-600 hover:text-gray-800"
                   >
-                    Third Link
+                    
                   </a>
                 </Link>
               </li>
@@ -143,7 +143,7 @@ with Technology and Love.
                     style={{ color: props.currTheme.titleCol }}
                     class="text-gray-600 hover:text-gray-800"
                   >
-                    Fourth Link
+                    
                   </a>
                 </Link>
               </li>
@@ -157,7 +157,7 @@ with Technology and Love.
               style={{ color: props.currTheme.titleCol }}
               class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"
             >
-              CATEGORIES
+              SERVICES
             </h2>
             <nav
               class="list-none mb-10"
@@ -169,7 +169,7 @@ with Technology and Love.
                     style={{ color: props.currTheme.titleCol }}
                     class="text-gray-600 hover:text-gray-800"
                   >
-                    First Link
+                    For Vendor
                   </a>
                 </Link>
               </li>
@@ -179,7 +179,7 @@ with Technology and Love.
                     style={{ color: props.currTheme.titleCol }}
                     class="text-gray-600 hover:text-gray-800"
                   >
-                    Second Link
+                    For Consumer
                   </a>
                 </Link>
               </li>
@@ -189,7 +189,7 @@ with Technology and Love.
                     style={{ color: props.currTheme.titleCol }}
                     class="text-gray-600 hover:text-gray-800"
                   >
-                    Third Link
+                  
                   </a>
                 </Link>
               </li>
@@ -199,7 +199,7 @@ with Technology and Love.
                     style={{ color: props.currTheme.titleCol }}
                     class="text-gray-600 hover:text-gray-800"
                   >
-                    Fourth Link
+                    
                   </a>
                 </Link>
               </li>
@@ -210,7 +210,7 @@ with Technology and Love.
               style={{ color: props.currTheme.titleCol }}
               class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"
             >
-              CATEGORIES
+              SOCIALS
             </h2>
             <nav class="list-none mb-10">
               <li style={{ color: props.currTheme.titleCol }}>
@@ -219,7 +219,7 @@ with Technology and Love.
                     style={{ color: props.currTheme.titleCol }}
                     class="text-gray-600 hover:text-gray-800"
                   >
-                    First Link
+                    Github
                   </a>
                 </Link>
               </li>
@@ -229,7 +229,7 @@ with Technology and Love.
                     style={{ color: props.currTheme.titleCol }}
                     class="text-gray-600 hover:text-gray-800"
                   >
-                    Second Link
+                    Whatsapp
                   </a>
                 </Link>
               </li>
@@ -239,7 +239,7 @@ with Technology and Love.
                     style={{ color: props.currTheme.titleCol }}
                     class="text-gray-600 hover:text-gray-800"
                   >
-                    Third Link
+                    LinkedIn
                   </a>
                 </Link>
               </li>
@@ -249,7 +249,7 @@ with Technology and Love.
                     style={{ color: props.currTheme.titleCol }}
                     class="text-gray-600 hover:text-gray-800"
                   >
-                    Fourth Link
+                    Instagram
                   </a>
                 </Link>
               </li>
@@ -263,7 +263,7 @@ with Technology and Love.
       >
         <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
           <p class="text-gray-500 text-sm text-center sm:text-left">
-            © 2020 TechThella —
+            © 2022 tECHtHELLA —
             <Link href={"/"}>
               <a
                 style={{ color: props.currTheme.titleCol }}
