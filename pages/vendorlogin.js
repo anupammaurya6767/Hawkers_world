@@ -143,7 +143,7 @@ const VendorSignIn = () => {
               </button>
               </Link>
               <p class="text-center text-sm text-gray-400 mt-4">
-                Don't Have an account ?{" "}
+                Dont Have an account ?
                 <Link href={"/"}>
                   <a class="font-semibold text-green-600 hover:underline">
                     Sign Up

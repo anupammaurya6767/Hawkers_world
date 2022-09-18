@@ -32,7 +32,7 @@ const [val, setval] = useState("");
         <Intro />
         <Revie data = {Revi}/>
         <div className="container px-5 py-4 mx-auto">
-    <h1 className='text-gray-600 text-4xl font-bold'>"At a time when scoring above"<span className="text-green-500"> 90%</span> feels hard, <span className="text-green-500">tECHtHELLA</span> has won the hearts of<span className="text-green-500"> {val}%.</span><br /><br /><t /> -- <span className="text-green-500">by co:here ai</span></h1>
+    <h1 className='text-gray-600 text-4xl font-bold'>At a time when scoring above<span className="text-green-500"> 90%</span> feels hard, <span className="text-green-500">tECHtHELLA</span> has won the hearts of<span className="text-green-500"> {val}%.</span><br /><br /><t /> -- <span className="text-green-500">by co:here ai</span></h1>
   </div>
     </div>
   )
