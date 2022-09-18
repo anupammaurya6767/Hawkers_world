@@ -26,7 +26,7 @@ const [val, setval] = useState("");
         <HomeImg />
         <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
         <h1 className="text-5xl font-bold text-gray-500">
-          Let's get <span className="text-green-500"><Link href={"/"}><a>Started</a></Link></span> !!!
+          Lets get <span className="text-green-500"><Link href={"/"}><a>Started</a></Link></span> !!!
         </h1>
         </div>
         <Intro />

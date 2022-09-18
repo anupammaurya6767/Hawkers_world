@@ -63,7 +63,6 @@ const NavBar = ({ props }) => {
           >
             <Link href={"/"}>
               <a
-                style={{ color: props.currTheme.titleCol }}
                 style={{ color: currTheme.optColor2 }}
                 className="mt-2 transition-colors duration-200 transform lg:mt-0 lg:mx-4 hover:text-gray-900 dark:hover:text-gray-200"
               >
@@ -72,7 +71,6 @@ const NavBar = ({ props }) => {
             </Link>
             <Link href={"/team"}>
               <a
-                style={{ color: props.currTheme.titleCol }}
                 style={{ color: currTheme.optColor2 }}
                 className="mt-2 transition-colors duration-200 transform lg:mt-0 lg:mx-4 hover:text-gray-900 dark:hover:text-gray-200"
               >
@@ -81,7 +79,6 @@ const NavBar = ({ props }) => {
             </Link>
             <Link href={"/prices"}>
               <a
-                style={{ color: props.currTheme.titleCol }}
                 style={{ color: currTheme.optColor2 }}
                 className="mt-2 transition-colors duration-200 transform lg:mt-0 lg:mx-4 hover:text-gray-900 dark:hover:text-gray-200"
               >
@@ -91,7 +88,6 @@ const NavBar = ({ props }) => {
             <Link href={"/#services"}>
               <a
                
-                style={{ color: props.currTheme.titleCol }}
                 style={{ color: currTheme.optColor2 }}
                 className="mt-2 transition-colors duration-200 transform lg:mt-0 lg:mx-4 scroll-smooth hover:text-gray-900 dark:hover:text-gray-200"
               >
