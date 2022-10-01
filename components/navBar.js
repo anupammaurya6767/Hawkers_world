@@ -94,6 +94,15 @@ const NavBar = ({ props }) => {
                 Services
               </a>
             </Link>
+            <Link href={"/reviews"}>
+              <a
+               
+                style={{ color: currTheme.optColor2 }}
+                className="mt-2 transition-colors duration-200 transform lg:mt-0 lg:mx-4 scroll-smooth hover:text-gray-900 dark:hover:text-gray-200"
+              >
+                Rate your Vendor
+              </a>
+            </Link>
           </div>
         </div>
 

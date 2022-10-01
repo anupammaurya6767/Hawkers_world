@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 const VendorSignIn = () => {
-  const [email, setphone] = useState("");
+  const [phone, setphone] = useState("");
   const [password, setpassword] = useState("");
   const changekro2 = (e) => {
     setphone(e.target.value);
@@ -103,13 +103,13 @@ const VendorSignIn = () => {
             >
               <div class="relative">
                 <input
-                  value={email}
+                  value={phone}
                   onChange={changekro2}
                   id="phone"
                   type="number"
                   name="phone"
                   class="peer w-full px-0.5 border-0 border-b-2 border-gray-300 placeholder-transparent focus:ring-0 focus:border-green-600"
-                  placeholder="Password"
+                  placeholder="Phone number"
                 />
                 <label
                   for="phone"
@@ -135,7 +135,7 @@ const VendorSignIn = () => {
                   Password
                 </label>
               </div>
-              <Link href={`/vendor/${email}`}><button
+              <Link href={`/vendor/${phone}`}><button
                 type="submit"
                 class="w-full mt-14 py-4 text-lg text-white font-semibold text-center rounded-full bg-green-500 transition-all hover:bg-green-600 focus:outline-none"
               >

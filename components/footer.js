@@ -106,7 +106,18 @@ with Technology and Love.
             >
               REVIEWS
             </h2>
+            
             <nav class="list-none mb-10">
+            <li style={{ color: props.currTheme.titleCol }}>
+                <Link href={"/reviews"}>
+                  <a
+                    style={{ color: props.currTheme.titleCol }}
+                    class="text-gray-600 hover:text-gray-800"
+                  >
+                    Rate your Vendor
+                  </a>
+                </Link>
+              </li>
               <li style={{ color: props.currTheme.titleCol }}>
                 <Link href={"/"}>
                   <a

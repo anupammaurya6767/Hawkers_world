@@ -39,15 +39,17 @@ const [val, setval] = useState("");
 }
 
 
-export async function getServerSideProps() {
-  if (!mongoose.connections[0].readyState) {
-    await mongoose.connect(process.env.MONGO_URL);
-  }
+export async function getServerSideProps(context) {
+  if(!mongoose.connections[0].readyState){
+  
 
+  await mongoose.connect(process.env.MONGO_URL)
+  }
 
   let Revi = await Reviews.find();
   return {
+     
     props: { Revi: JSON.parse(JSON.stringify(Revi)) },
-  };
+  }
 }
 

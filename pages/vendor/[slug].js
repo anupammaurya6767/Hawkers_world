@@ -1,12 +1,14 @@
 
-	import { useRouter } from "next/router";
-import User from "../../models/User";
+import { useRouter } from "next/router";
+import Vendor from "../../models/Vendor";
 import mongoose from "mongoose";
 import React, { useState } from 'react';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
   
 export default function Slug(Users){
+  const router = useRouter();
+  const { slug } = router.query;
   const [pin,setpin] = useState("");
   const [item,setitem]= useState("");
   const [x,setx] = useState("");
@@ -20,8 +22,6 @@ export default function Slug(Users){
     setitem(e.target.value)
     setx( Math.floor((Math.random() * 86) + 1))
   }
-  const router = useRouter();
-  const { slug } = router.query;
   return (
     <>
 
@@ -30,7 +30,7 @@ export default function Slug(Users){
      <div>
 
         <span className="text-green-500" style={{fontSize: '2.5rem', fontWeight: 600}}>Hello </span> <span style={{fontSize: '2.5rem', fontWeight: 600}}> {Users.Users.firstName}</span>
-        <div style={{color: 'gray', textTransform: 'capitalize'}}>contact: {Users.Users.pincode} </div>
+        <div style={{color: 'gray', textTransform: 'capitalize'}}>contact: {Users.Users.phone} </div>
         
       </div>
     <div class="flex flex-wrap w-full">
@@ -114,7 +114,9 @@ export default function Slug(Users){
             await mongoose.connect(process.env.MONGO_URL)
             }
           
-            let Users = await User.findOne({phone:context.query.slug});
+            let Users = await Vendor.findOne({phone:context.query.slug});
+            console.log(context.query.slug)
+            console.log(Users)
             return {
                
               props: {Users:JSON.parse(JSON.stringify(Users))},
