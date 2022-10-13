@@ -1,7 +1,9 @@
 import { useRouter } from "next/router";
 import User from "../../models/User";
 // import User from "../../models/User";
+import Link from "next/link";
 import mongoose from "mongoose";
+import { Box, Stack } from "@mui/material";
 
 export default function Slug(Users) {
   const router = useRouter();
@@ -55,6 +57,13 @@ export default function Slug(Users) {
           </div>
         </div>
       </section>
+      
+      <div className="text-center">
+        <button class="flex mx-auto mt-16 text-white bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+      <Link href="/payment">Upgrade to Premium Model Now?</Link>
+    </button>
+
+      </div>
 
       <div className="container px-5 py-4 mx-auto">
         <h1 className="text-gray-600 text-4xl font-bold">

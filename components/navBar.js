@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import ToggleTheme from "./ToggleTheme";
-
+import { motion } from "framer-motion"
 
 const NavBar = ({ props }) => {
 
@@ -62,46 +62,56 @@ const NavBar = ({ props }) => {
             }`}
           >
             <Link href={"/"}>
-              <a
-                style={{ color: currTheme.optColor2 }}
+              <motion.a
+                style={{ color: currTheme.optColor2 }} whileTap={{ scale: 1.05 }} whileHover={{scale: 1.05}} 
                 className="mt-2 transition-colors duration-200 transform lg:mt-0 lg:mx-4 hover:text-gray-900 dark:hover:text-gray-200"
               >
                 Home
-              </a>
+              </motion.a>
             </Link>
             <Link href={"/team"}>
-              <a
-                style={{ color: currTheme.optColor2 }}
+              <motion.a
+                style={{ color: currTheme.optColor2 }} whileTap={{ scale: 1.05 }} whileHover={{scale: 1.05}} 
                 className="mt-2 transition-colors duration-200 transform lg:mt-0 lg:mx-4 hover:text-gray-900 dark:hover:text-gray-200"
               >
                 About
-              </a>
+              </motion.a>
             </Link>
             <Link href={"/prices"}>
-              <a
-                style={{ color: currTheme.optColor2 }}
+              <motion.a
+                style={{ color: currTheme.optColor2 }} whileTap={{ scale: 1.05 }} whileHover={{scale: 1.05}} 
                 className="mt-2 transition-colors duration-200 transform lg:mt-0 lg:mx-4 hover:text-gray-900 dark:hover:text-gray-200"
               >
                 Pricing
-              </a>
+              </motion.a>
             </Link>
             <Link href={"/#services"}>
-              <a
+              <motion.a
                
-                style={{ color: currTheme.optColor2 }}
+                style={{ color: currTheme.optColor2 }} whileTap={{ scale: 1.05 }} whileHover={{scale: 1.05}} 
                 className="mt-2 transition-colors duration-200 transform lg:mt-0 lg:mx-4 scroll-smooth hover:text-gray-900 dark:hover:text-gray-200"
               >
                 Services
-              </a>
+              </motion.a>
             </Link>
             <Link href={"/reviews"}>
-              <a
+              <motion.a
                
-                style={{ color: currTheme.optColor2 }}
+                style={{ color: currTheme.optColor2 }} whileTap={{ scale: 1.05 }} whileHover={{scale: 1.05}} 
                 className="mt-2 transition-colors duration-200 transform lg:mt-0 lg:mx-4 scroll-smooth hover:text-gray-900 dark:hover:text-gray-200"
               >
                 Rate your Vendor
-              </a>
+              </motion.a>
+            </Link>
+
+            <Link href={"/dashboard/a"}>
+              <motion.a
+               
+                style={{ color: currTheme.optColor2 }} whileTap={{ scale: 1.05 }} whileHover={{scale: 1.05}} 
+                className="mt-2 transition-colors duration-200 transform lg:mt-0 lg:mx-4 scroll-smooth hover:text-gray-900 dark:hover:text-gray-200"
+              >
+                Dashboard
+              </motion.a>
             </Link>
           </div>
         </div>

@@ -5,10 +5,12 @@ const handler = async (req, res) => {
   if (req.method == "POST") {
     for (let i = 0; i < req.body.length; i++) {
       let b = new Reviews({
-            firstName: req.body[i].firstName,
+            vendornumber: req.body[i].vendornumber,
             email: req.body[i].email,
             msg: req.body[i].msg
       });
+
+
 
       await b.save();
       res.status(200).json({ success: "success" });

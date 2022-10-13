@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const ReviewsSchema = new mongoose.Schema(
   {
-    firstName: { type: String, required: true },
+    vendornumber: { type: Number, required: true },
     email : {type:String, required: true, unique:true},
     msg: {type:String, required: true}
   },{timestamps: true});

@@ -5,11 +5,12 @@ import Revie from "../components/review";
 import Reviews from "../models/Reviews";
 import mongoose from "mongoose";
 import cohere from "cohere-ai";
+import Revi from "../models/Revi";
 import {useEffect, useState } from "react";
 let val=98.36;
-export default function Home(Revi) {
+export default function Home(Rev,Revs) {
 const [val, setval] = useState("");
-
+console.log(Revs)
   cohere.init("lKc5LHAV8g35ethqSsoVvp9WERyIT8cXMjQFSSvZ");
 (async () => {
   const response = await cohere.classify({
@@ -30,7 +31,7 @@ const [val, setval] = useState("");
         </h1>
         </div>
         <Intro />
-        <Revie data = {Revi}/>
+        <Revie data = {Rev}/>
         <div className="container px-5 py-4 mx-auto">
     <h1 className='text-gray-600 text-4xl font-bold'>At a time when scoring above<span className="text-green-500"> 90%</span> feels hard, <span className="text-green-500">tECHtHELLA</span> has won the hearts of<span className="text-green-500"> {val}%.</span><br /><br /><t /> -- <span className="text-green-500">by co:here ai</span></h1>
   </div>
@@ -46,10 +47,10 @@ export async function getServerSideProps(context) {
   await mongoose.connect(process.env.MONGO_URL)
   }
 
-  let Revi = await Reviews.find();
-  return {
-     
-    props: { Revi: JSON.parse(JSON.stringify(Revi)) },
+  let Rev = await Reviews.find();
+  let Revs = await Revi.find();
+  console.log(Revs)
+  return { 
+    props: { Rev: JSON.parse(JSON.stringify(Rev)), Revs: JSON.parse(JSON.stringify(Revs))},
   }
 }
-

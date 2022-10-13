@@ -10,18 +10,25 @@ export default function Slug(Users){
   const router = useRouter();
   const { slug } = router.query;
   const [pin,setpin] = useState("");
-  const [item,setitem]= useState("");
+  const [item,setitem]= useState("vegetables");
   const [x,setx] = useState("");
 
-  
+  setInterval(function () {
+    let prev = Math.floor((Math.random() * 73) + 10)
+    let r= Math.floor((Math.random() * 10) - 10)
+    setx(prev+r)
+  }, 15000);
 
   const changekro = (e)=>{
-    setpin(e.target.value)
+    setpin(e.target.value) 
+    setx(Math.floor((Math.random() * 73) + 10))
   }
   const changekro2 = (e)=>{
     setitem(e.target.value)
-    setx( Math.floor((Math.random() * 86) + 1))
+    setx(Math.floor((Math.random() * 73) + 10))
   }
+
+
   return (
     <>
 
@@ -46,7 +53,7 @@ export default function Slug(Users){
       <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
        Your Location
       </label>
-      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="number" placeholder="pincode" onChange={changekro} value={pin}/>
+      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="number" placeholder="pincode" onChange={changekro} value={pin} />
     </div>
     <div class="mb-6">
       <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
@@ -56,7 +63,7 @@ export default function Slug(Users){
       <p class="text-green-500 text-xs italic"></p>
     </div>
     <div class="flex items-center justify-between">
-    <Popup trigger={   <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+    <Popup trigger={   <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button" >
         Predict Probability
       </button>
       } position="right center">

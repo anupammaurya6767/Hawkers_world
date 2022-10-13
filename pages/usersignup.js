@@ -10,7 +10,6 @@ const UserSignUp = () => {
     const [pincode, setpincode] = useState("");
     const [password, setpassword] = useState("");
     const value = true;
-
     const changekro1 = (e)=>{
         setpincode(e.target.value);
 

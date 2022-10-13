@@ -7,7 +7,8 @@ const UserSchema = new mongoose.Schema(
     email : {type:String, required: true, unique:true},
     pincode: {type: Number, required: true},
     password: { type: String, required: true },
-    isuser: {type: Boolean, required: true, default: true}
+    isuser: {type: Boolean, required: true, default: true},
+    credit: {type: Number, default:0}
   },{timestamps: true});
 
   mongoose.models = {};
