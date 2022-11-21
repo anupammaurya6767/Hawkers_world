@@ -31,10 +31,10 @@ const NavBar = ({ props }) => {
                 className="text-2xl font-bold text-gray-800 transition-colors duration-200 transform dark:text-white lg:text-3xl hover:text-gray-700 dark:hover:text-gray-300"
                 href="#"
               >
-                <span className="text-4xl text-green-500">t</span>
-                <span style={{ color: currTheme.titleCol }}>ECH</span>
-                <span className="text-4xl text-green-500">t</span>
-                <span style={{ color: currTheme.titleCol }}>HELLA</span>
+                <span className="text-4xl text-orange-500">Hawkers</span>
+                <span style={{ color: currTheme.titleCol }}>W</span>
+                <span className="text-4xl text-orange-500">o</span>
+                <span style={{ color: currTheme.titleCol }}>rld</span>
               </a>
             </div>
 
@@ -77,14 +77,14 @@ const NavBar = ({ props }) => {
                 About
               </motion.a>
             </Link>
-            <Link href={"/prices"}>
+            {/* <Link href={"/prices"}>
               <motion.a
                 style={{ color: currTheme.optColor2 }} whileTap={{ scale: 1.05 }} whileHover={{scale: 1.05}} 
                 className="mt-2 transition-colors duration-200 transform lg:mt-0 lg:mx-4 hover:text-gray-900 dark:hover:text-gray-200"
               >
                 Pricing
               </motion.a>
-            </Link>
+            </Link> */}
             <Link href={"/#services"}>
               <motion.a
                
@@ -104,7 +104,7 @@ const NavBar = ({ props }) => {
               </motion.a>
             </Link>
 
-            <Link href={"/dashboard/a"}>
+            {/* <Link href={"/dashboard/a"}>
               <motion.a
                
                 style={{ color: currTheme.optColor2 }} whileTap={{ scale: 1.05 }} whileHover={{scale: 1.05}} 
@@ -112,7 +112,7 @@ const NavBar = ({ props }) => {
               >
                 Dashboard
               </motion.a>
-            </Link>
+            </Link> */}
           </div>
         </div>
 
@@ -165,7 +165,7 @@ const NavBar = ({ props }) => {
             </svg>
           </a>
 
-          <ToggleTheme props={{ themes, currTheme, setCurrTheme }} />
+          {/* <ToggleTheme props={{ themes, currTheme, setCurrTheme }} /> */}
         </div>
       </div>
     </nav>

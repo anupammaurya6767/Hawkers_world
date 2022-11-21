@@ -27,14 +27,14 @@ console.log(Revs)
         <HomeImg />
         <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
         <h1 className="text-5xl font-bold text-gray-500">
-          Lets get <span className="text-green-500"><Link href={"/"}><a>Started</a></Link></span> !!!
+          Lets get <span className="text-orange-500"><Link href={"/"}><a>Started</a></Link></span> !!!
         </h1>
         </div>
         <Intro />
         <Revie data = {Rev}/>
-        <div className="container px-5 py-4 mx-auto">
-    <h1 className='text-gray-600 text-4xl font-bold'>At a time when scoring above<span className="text-green-500"> 90%</span> feels hard, <span className="text-green-500">tECHtHELLA</span> has won the hearts of<span className="text-green-500"> {val}%.</span><br /><br /><t /> -- <span className="text-green-500">by co:here ai</span></h1>
-  </div>
+        {/* <div className="container px-5 py-4 mx-auto">
+    <h1 className='text-gray-600 text-4xl font-bold'>At a time when scoring above<span className="text-orange-500"> 90%</span> feels hard, <span className="text-orange-500">tECHtHELLA</span> has won the hearts of<span className="text-orange-500"> {val}%.</span><br /><br /><t /> -- <span className="text-orange-500">by co:here ai</span></h1>
+  </div> */}
     </div>
   )
 }

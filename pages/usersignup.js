@@ -95,7 +95,7 @@ const UserSignUp = () => {
 
     }
   return (
-    <div class="relative min-h-screen bg-green-100 backdrop-blur flex justify-center items-center bg-texture bg-cover py-28 sm:py-0">
+    <div class="relative min-h-screen bg-orange-100 backdrop-blur flex justify-center items-center bg-texture bg-cover py-28 sm:py-0">
       <div class="p-4 sm:p-8 flex-1 ">
       {value ? <ToastContainer
 position="top-right"
@@ -179,7 +179,7 @@ pauseOnHover
                   </a>
                 </Link>
               </div>
-              <div class="w-14 h-14 text-center rounded-full bg-green-500 text-white saturate-100 transition-all hover:bg-green-600">
+              <div class="w-14 h-14 text-center rounded-full bg-orange-500 text-white saturate-100 transition-all hover:bg-orange-600">
                 <Link href={"/"}>
                   <a class="block mt-4">
                     <i class="fab fa-line fa-lg"></i>
@@ -199,12 +199,12 @@ pauseOnHover
                   id="name"
                   name="name"
                   type="text"
-                  class="peer w-full px-0.5 border-0 border-b-2 border-gray-300 placeholder-transparent focus:ring-0 focus:border-green-600"
+                  class="peer w-full px-0.5 border-0 border-b-2 border-gray-300 placeholder-transparent focus:ring-0 focus:border-orange-600"
                   placeholder="willPig@tailwind.com"
                 />
                 <label
                   for="name"
-                  class="absolute left-0 -top-3.5 text-gray-600 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-green-600 peer-focus:text-sm"
+                  class="absolute left-0 -top-3.5 text-gray-600 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-orange-600 peer-focus:text-sm"
                 >
                   Name
                 </label>
@@ -215,12 +215,12 @@ pauseOnHover
                   id="email"
                   type="email"
                   name="email"
-                  class="peer w-full px-0.5 border-0 border-b-2 border-gray-300 placeholder-transparent focus:ring-0 focus:border-green-600"
+                  class="peer w-full px-0.5 border-0 border-b-2 border-gray-300 placeholder-transparent focus:ring-0 focus:border-orange-600"
                   placeholder="Password"
                 />
                 <label
                   for="email"
-                  class="absolute left-0 -top-3.5 text-gray-600 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-green-600 peer-focus:text-sm"
+                  class="absolute left-0 -top-3.5 text-gray-600 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-orange-600 peer-focus:text-sm"
                 >
                   E-mail
                 </label>
@@ -231,12 +231,12 @@ pauseOnHover
                   id="password"
                   type="password"
                   name="password"
-                  class="peer w-full px-0.5 border-0 border-b-2 border-gray-300 placeholder-transparent focus:ring-0 focus:border-green-600"
+                  class="peer w-full px-0.5 border-0 border-b-2 border-gray-300 placeholder-transparent focus:ring-0 focus:border-orange-600"
                   placeholder="Password"
                 />
                 <label
                   for="password"
-                  class="absolute left-0 -top-3.5 text-gray-600 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-green-600 peer-focus:text-sm"
+                  class="absolute left-0 -top-3.5 text-gray-600 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-orange-600 peer-focus:text-sm"
                 >
                   Password
                 </label>
@@ -247,12 +247,12 @@ pauseOnHover
                   id="address"
                   type="text"
                   name="address"
-                  class="peer w-full px-0.5 border-0 border-b-2 border-gray-300 placeholder-transparent focus:ring-0 focus:border-green-600"
+                  class="peer w-full px-0.5 border-0 border-b-2 border-gray-300 placeholder-transparent focus:ring-0 focus:border-orange-600"
                   placeholder="Address"
                 />
                 <label
                   for="address"
-                  class="absolute left-0 -top-3.5 text-gray-600 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-green-600 peer-focus:text-sm"
+                  class="absolute left-0 -top-3.5 text-gray-600 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-orange-600 peer-focus:text-sm"
                 >
                   Address
                 </label>
@@ -263,12 +263,12 @@ pauseOnHover
                   id="pincode"
                   type="number"
                   name="pincode"
-                  class="peer w-full px-0.5 border-0 border-b-2 border-gray-300 placeholder-transparent focus:ring-0 focus:border-green-600"
+                  class="peer w-full px-0.5 border-0 border-b-2 border-gray-300 placeholder-transparent focus:ring-0 focus:border-orange-600"
                   placeholder="Pincode"
                 />
                 <label
                   for="pincode"
-                  class="absolute left-0 -top-3.5 text-gray-600 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-green-600 peer-focus:text-sm"
+                  class="absolute left-0 -top-3.5 text-gray-600 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-orange-600 peer-focus:text-sm"
                 >
                  Pincode
                 </label>
@@ -277,13 +277,13 @@ pauseOnHover
                 <label class="inline-flex items-center">
                   <input
                     type="checkbox"
-                    class="rounded border-gray-300 text-green-600 focus:border-green-300 focus:ring focus:ring-offset-0 focus:ring-green-200/50"
+                    class="rounded border-gray-300 text-orange-600 focus:border-orange-300 focus:ring focus:ring-offset-0 focus:ring-orange-200/50"
                     checked
                   />
                   <span class="ml-2 text-sm">
                     Check here that you have agree to{" "}
                     <Link href={"/"}>
-                      <a class="font-semibold text-green-600 hover:underline">
+                      <a class="font-semibold text-orange-600 hover:underline">
                         the terms.
                       </a>
                     </Link>
@@ -292,14 +292,14 @@ pauseOnHover
               </div>
               <button
                 type="submit"
-                class="w-full mt-14 py-4 text-lg text-white font-semibold text-center rounded-full bg-green-500 transition-all hover:bg-green-600 focus:outline-none"
+                class="w-full mt-14 py-4 text-lg text-white font-semibold text-center rounded-full bg-orange-500 transition-all hover:bg-orange-600 focus:outline-none"
               >
                 Sign up
               </button>
               <p class="text-center text-sm text-gray-400 mt-4">
                 Have an account ?{" "}
                 <Link href={"/userlogin"}>
-                  <a class="font-semibold text-green-600 hover:underline">
+                  <a class="font-semibold text-orange-600 hover:underline">
                     Log in
                   </a>
                 </Link>

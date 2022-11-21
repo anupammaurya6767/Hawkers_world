@@ -8,6 +8,9 @@ import { useRouter } from 'next/router';
 import NProgress from 'nprogress'; 
 import 'nprogress/nprogress.css'; 
 import Router from 'next/router';
+import CustomChatbot from '../components/bot'
+ 
+ 
 
 Router.events.on('routeChangeStart', () => NProgress.start()); 
 Router.events.on('routeChangeComplete', () => NProgress.done()); 
@@ -54,6 +57,7 @@ function MyApp({ Component, pageProps }) {
   <div style={{backgroundColor: currTheme.bgcolor}}>
   <NavBar props={{themes, currTheme, setCurrTheme}} />
   <Component {...pageProps} />
+  <CustomChatbot />
   <Footer props={{ themes, currTheme, setCurrTheme }} />
   </div>
   );

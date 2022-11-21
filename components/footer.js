@@ -20,7 +20,7 @@ const Footer = ({ props }) => {
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="2"
-                class="w-10 h-10 text-white p-2 bg-green-500 rounded-full"
+                class="w-10 h-10 text-white p-2 bg-orange-500 rounded-full"
                 viewBox="0 0 24 24"
               >
                 <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
@@ -29,8 +29,8 @@ const Footer = ({ props }) => {
                 class="ml-3 text-xl"
                 style={{ color: props.currTheme.titleCol }}
               >
-                <span className="text-3xl text-green-500">t</span>ECH
-                <span className="text-3xl text-green-500">t</span>HELLA
+                <span className="text-3xl text-orange-500">H</span>awkers
+                <span className="text-3xl text-orange-500">W</span>orld
               </span>
             </a>
           </Link>
@@ -274,16 +274,16 @@ with Technology and Love.
       >
         <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
           <p class="text-gray-500 text-sm text-center sm:text-left">
-            © 2022 tECHtHELLA —
+            © 2022 Hawkers World —
             <Link href={"/"}>
               <a
                 style={{ color: props.currTheme.titleCol }}
-                href="https://twitter.com/knyttneve"
+                href=""
                 rel="noopener noreferrer"
                 class="text-gray-600 ml-1"
                 target="_blank"
               >
-                @techthella
+                @Hawkers World
               </a>
             </Link>
           </p>

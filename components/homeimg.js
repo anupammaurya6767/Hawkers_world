@@ -9,7 +9,7 @@ const HomeImg = () => {
             <motion.h1 initial={{ opacity: 0}}
             animate={{ opacity: 1}}
             transition={{ duration: 1}}
-            style={{ fontWeight: 700 }} style={{ fontWeight: 700 }} class="title-font sm:text-5xl text-3xl mb-4 font-medium text-lightgray-900">Empowering your long-lived <span className="text-green-500"> Trust</span>,<br/>with Technology and Love.
+            style={{ fontWeight: 700 }} style={{ fontWeight: 700 }} class="title-font sm:text-5xl text-3xl mb-4 font-medium text-lightgray-900">Empowering your long-lived <span className="text-orange-500"> Trust</span>,<br/>with Technology and Love.
             </motion.h1>
             {/* <p class="title-font text-2xl mb-8 leading-relaxed"> */}
             <Typewriter class="title-font text-10xl mb-8 leading-relaxed"
@@ -29,7 +29,7 @@ const HomeImg = () => {
             </div>
           <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
             
-            <motion.img animate={{ x: -80  }} transition={{ ease: "easeOut", duration: 1 }} whileTap={{ scale: 1.15 }} whileHover={{scale: 1.15}} class="object-cover object-center rounded" alt="hero" src="/intro.png" />
+            <motion.img animate={{ x: -80  }} transition={{ ease: "easeOut", duration: 1 }} whileTap={{ scale: 1.15 }} whileHover={{scale: 1.15}} class="object-cover object-center rounded" alt="hero" src="/main.jpg" />
           </div>
         </div>
       </section>

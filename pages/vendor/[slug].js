@@ -36,7 +36,7 @@ export default function Slug(Users){
   <div class="container px-5 py-24 mx-auto flex flex-wrap">
      <div>
 
-        <span className="text-green-500" style={{fontSize: '2.5rem', fontWeight: 600}}>Hello </span> <span style={{fontSize: '2.5rem', fontWeight: 600}}> {Users.Users.firstName}</span>
+        <span className="text-orange-500" style={{fontSize: '2.5rem', fontWeight: 600}}>Hello </span> <span style={{fontSize: '2.5rem', fontWeight: 600}}> {Users.Users.firstName}</span>
         <div style={{color: 'gray', textTransform: 'capitalize'}}>contact: {Users.Users.phone} </div>
         
       </div>
@@ -44,7 +44,7 @@ export default function Slug(Users){
             <div class="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
           <div class="mt-20 flex relative pb-12">
           
-          <div><span style={{fontSize: '2rem', fontWeight: 600}}>Bahut hua Online ka</span><span className="text-green-500" style={{fontSize: '2.5rem', fontWeight: 600}}> Prahaar,</span><br></br> <span style={{fontSize: '2rem', fontWeight: 600}}>Ab phone hi Badhayega Aapki</span> <span className="text-green-500" style={{fontSize: '2.5rem', fontWeight: 600}}>Raftaar.</span>.<br></br></div>
+          <div><span style={{fontSize: '2rem', fontWeight: 600}}>Bahut hua Online ka</span><span className="text-orange-500" style={{fontSize: '2.5rem', fontWeight: 600}}> Prahaar,</span><br></br> <span style={{fontSize: '2rem', fontWeight: 600}}>Ab phone hi Badhayega Aapki</span> <span className="text-orange-500" style={{fontSize: '2.5rem', fontWeight: 600}}>Raftaar.</span>.<br></br></div>
       
         </div> 
      
@@ -59,11 +59,11 @@ export default function Slug(Users){
       <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
         What you have to sell?
       </label>
-      <input class="shadow appearance-none border border-green-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="text" placeholder="vegetables" onChange={changekro2} value={item}/>
-      <p class="text-green-500 text-xs italic"></p>
+      <input class="shadow appearance-none border border-orange-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="text" placeholder="vegetables" onChange={changekro2} value={item}/>
+      <p class="text-orange-500 text-xs italic"></p>
     </div>
     <div class="flex items-center justify-between">
-    <Popup trigger={   <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button" >
+    <Popup trigger={   <button class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button" >
         Predict Probability
       </button>
       } position="right center">
@@ -74,7 +74,7 @@ export default function Slug(Users){
       Proability Score
     </div>
     <div class="p-6">
-      <h5 class="text-gray-900 text-xl font-medium mb-2"><span className="text-green-500 font-bold text-2xl">{x}%</span></h5>
+      <h5 class="text-gray-900 text-xl font-medium mb-2"><span className="text-orange-500 font-bold text-2xl">{x}%</span></h5>
       <p class="text-gray-700 text-base mb-4">
         in locality with pincode: {pin}
       </p>

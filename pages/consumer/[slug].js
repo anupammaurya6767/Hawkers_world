@@ -14,7 +14,7 @@ export default function Slug(Users) {
         <div class="container px-5 py-24 mx-auto flex flex-wrap">
           <div>
             <span
-              className="text-green-500"
+              className="text-orange-500"
               style={{ fontSize: "2.5rem", fontWeight: 600 }}
             >
               Hello
@@ -31,15 +31,15 @@ export default function Slug(Users) {
             <div class="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
               <div class="mt-20 flex relative pb-12">
                 <div><span className="text-gray-600 text-5xl font-bold">Welcome to </span> <span
-              className="text-green-500"
+              className="text-orange-500"
               style={{ fontSize: "2.6rem", fontWeight: 600 }}
             >tECHtHELLA!</span><br></br>
             
               <span className="text-gray-600 text-3xl ">You can take a look at the</span><span
-              className="text-green-500"
+              className="text-orange-500"
               style={{ fontSize: "2rem", fontWeight: 500 }}
             > vendor list</span> <span className="text-gray-600 text-3xl ">below who are providing different</span><span
-            className="text-green-500"
+            className="text-orange-500"
             style={{ fontSize: "2rem", fontWeight: 500 }}
           > services/products.</span></div>
               </div>
@@ -59,7 +59,7 @@ export default function Slug(Users) {
       </section>
       
       <div className="text-center">
-        <button class="flex mx-auto mt-16 text-white bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+        <button class="flex mx-auto mt-16 text-white bg-orange-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
       <Link href="/payment">Upgrade to Premium Model Now?</Link>
     </button>
 
@@ -67,7 +67,7 @@ export default function Slug(Users) {
 
       <div className="container px-5 py-4 mx-auto">
         <h1 className="text-gray-600 text-4xl font-bold">
-          <span className="text-green-500">Star Rated Vendors</span> near you
+          <span className="text-orange-500">Star Rated Vendors</span> near you
         </h1>
       </div>
       <section class="text-gray-600 body-font">

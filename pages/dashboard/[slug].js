@@ -24,7 +24,7 @@ function Profile() {
           </div>
           <div class="flex flex-col items-center text-center justify-center">
             <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">Pawan Singh</h2>
-            <div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+            <div class="w-12 h-1 bg-orange-500 rounded mt-2 mb-4"></div>
             <p class="text-base">Email@abc.com</p>
           </div>
         </div>
